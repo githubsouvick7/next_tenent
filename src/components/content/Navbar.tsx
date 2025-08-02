@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import clsx from "clsx";
-import { ModeToggle } from "../custom/theme";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,7 +46,6 @@ export default function Navbar() {
 
           {/* Actions */}
           <div className="flex gap-2 items-center">
-            <ModeToggle />
             <Link href="/auth">
               <Button className="transition-all hover:scale-105">Login</Button>
             </Link>
